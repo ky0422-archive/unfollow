@@ -1,11 +1,10 @@
-# unfollow
-
-팔로우 한 유저를 차단(`-> 차단 해제`)하여 팔로워를 초기화합니다.
+깃허브 팔로워를 초기화합니다.
 
 ```sh
-npm i
-cd src
-# edit dd.ts
+cd src && vi config.ts # Edit name, token
+cd ../ && npm run build
 ```
 
-**스파게티 코드/콜백 지옥에 주의하세요. ㅇㅅㅇ**
+---
+
+[**MIT License**](./LICENSE)
