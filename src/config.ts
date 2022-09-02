@@ -1,6 +1,4 @@
-const name = "Github name";
-const token = "Github token";
+export const name = 'Github name'
+export const token = 'Github token'
 
-const BASE_URL = `https://api.github.com/users/${name}/followers`;
-
-export { name, token, BASE_URL };
+export const BASE_URL = `https://api.github.com/users/${name}/followers`

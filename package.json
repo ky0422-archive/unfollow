@@ -1,15 +1,16 @@
 {
-  "name": "dd",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./dist/index.js",
-  "scripts": {
-    "build": "tsc && node ./dist/index.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@octokit/core": "^3.6.0",
-    "axios": "^0.26.1"
-  }
+    "name": "unfollow",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "if [ -d dist ]; then rm -rf dist; npm run build:tsc; else npm run build:tsc; fi",
+        "build:windows": "@echo off && npm run build:tsc && @echo on",
+        "build:tsc": "tsc -p tsconfig.json",
+        "start": "npm run build && node dist/index.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@octokit/core": "^3.6.0",
+        "axios": "^0.26.1"
+    }
 }
